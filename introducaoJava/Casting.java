@@ -37,8 +37,11 @@ public class Casting {
 
         //Tranformando inteiro em String
 
+
         String Nome2 = String.valueOf(idade1);
         System.out.println(Nome2);
+
+
 
         // Tranformando String em inteiro
 
@@ -50,6 +53,6 @@ public class Casting {
 
         int idade3 = Integer.parseInt(Cavalos);
         System.out.println(idade3 + 1);
-        
+
     }
 }
