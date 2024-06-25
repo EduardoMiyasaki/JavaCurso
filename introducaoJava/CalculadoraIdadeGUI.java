@@ -36,3 +36,5 @@ public class CalculadoraIdadeGUI extends JFrame{
         h.setSize(400,300);
     }
 }
+
+
