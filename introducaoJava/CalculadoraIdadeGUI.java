@@ -11,6 +11,9 @@ public class CalculadoraIdadeGUI extends JFrame{
     private JPanel panelMain;
 
     public CalculadoraIdadeGUI() {
+        // Metódo construtor
+        // pois é um metódo com o mesmo nome da classe
+
         btnCalcular.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

@@ -10,6 +10,7 @@ public class telaSoma extends JFrame{
     private JLabel lblSoma;
 
     public telaSoma() {
+        // Metódo construtor pois a classe tem o mesmo nome da classe
         btnSoma.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

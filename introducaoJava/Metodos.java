@@ -5,6 +5,5 @@ public class Metodos {
 
         // Já o metódo setter
         // Você seta(adiciona) um novo valor
-
     }
 }
