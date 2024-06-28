@@ -26,9 +26,10 @@ public class verificadorIdade {
             situacao = "menor de idade";
         }
 
-        if(idade >= 16 && idade <= 18 || idade > 70){
+        if(idade >= 16 && idade < 18 || idade > 70){
            voto = "opcional";
-        } else if(idade < 16){
+        }
+        else if(idade < 16){
             voto = "não pode votar";
         }
         else{
