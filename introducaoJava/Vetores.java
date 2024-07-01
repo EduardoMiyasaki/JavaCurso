@@ -4,7 +4,6 @@ public class Vetores {
 
     public static void main(String [] args){
 
-
         //Dessa forma o vetores/array já tem um tamanho/Length definido e também os valores
 
         int[] idades = {2,3,4};
@@ -21,12 +20,12 @@ public class Vetores {
 
         // Este vetor tem um length mutável ou seja pode ter qualquer tamanho
 
-        ArrayList<Integer> Precos = new ArrayList<Integer>();
+        ArrayList<Integer> precos = new ArrayList<Integer>();
 
         // Adicionando valores ao vetor
-        Precos.add(22);
-        Precos.add(50);
-        Precos.add(14);
+        precos.add(22);
+        precos.add(50);
+        precos.add(14);
 
         ArrayList<Integer> Quantidades = new ArrayList<Integer>();
 
@@ -34,24 +33,24 @@ public class Vetores {
         Quantidades.add(2);
 
         //Removendo valores do vetor
-        Precos.remove(0);
+        precos.remove(0);
 
         // Pegando valores do vetor
-        Precos.get(1);
+        precos.get(1);
 
         // Vendo o tamanho do vetor, seria o length em javaScript, só funciona no ArrayList em outros vetores é realmente length
-        Precos.size();
+        precos.size();
 
-        System.out.println("Pegando o valor do vetor " + Precos.get(0));
+        System.out.println("Pegando o valor do vetor " + precos.get(0));
 
-        System.out.println("O número atual de elementos dentro do ArrayList(precos),atualmente é " +Precos.size() + " Lembrando que este vetor pode mudar de tamanho");
+        System.out.println("O número atual de elementos dentro do ArrayList(precos),atualmente é " +precos.size() + " Lembrando que este vetor pode mudar de tamanho");
 
-        System.out.println("Verificando se dentro do vetor preços existe o valor 50: " + Precos.contains(50));
+        System.out.println("Verificando se dentro do vetor preços existe o valor 50: " + precos.contains(50));
 
-        // Adicionando todos os valores do vetor Quantidades dentro do vetor Precos
-        Precos.addAll(Quantidades);
+        // Adicionando todos os valores do vetor Quantidades dentro do vetor precos
+        precos.addAll(Quantidades);
 
-        System.out.println(Precos);
+        System.out.println(precos);
     }
 
 }

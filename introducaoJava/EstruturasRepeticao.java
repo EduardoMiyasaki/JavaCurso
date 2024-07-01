@@ -5,7 +5,27 @@ public class EstruturasRepeticao {
 
         // While e for em java
 
+
         int Contador = 5;
+
+        //Contagem de 1 a 100 pulando de 10 em 10
+        for(int index = 0; index <= 100;index+=10){
+            if(index == 0){
+                System.out.println(index + 1);
+                continue;
+            }
+            System.out.println(index);
+        }
+
+        // Estruturas aninhadas
+
+        for (int ind = 1; ind <= 3 ; ind ++) {
+            System.out.println(ind);
+            for (int j = 0; j <= 2; j++) {
+                System.out.println(j);
+            }
+        }
+
 
         for (int i = 0; i < Contador; i++) {
             System.out.println("Oi" + (i + 1));
