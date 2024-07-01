@@ -12,6 +12,7 @@ public class EstruturasRepeticao {
         for(int index = 0; index <= 100;index+=10){
             if(index == 0){
                 System.out.println(index + 1);
+                // continue faz com execute a parte de cima do for
                 continue;
             }
             System.out.println(index);
