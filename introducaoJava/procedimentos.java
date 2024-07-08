@@ -9,8 +9,10 @@ public class procedimentos {
     static String nomeMaisPesado = "";
     static int maiorPeso = 0;
 
+
     // isso é um procedimento,
     // pois não retorna valor
+    // Void significa que não retorna valor
     // String nome e int peso são os parametros que são utilizados no metódo main
 
     static void detectorPeso(String nome, int peso) {
