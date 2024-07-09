@@ -1,4 +1,4 @@
-public class criandoClasses_Objetos {
+public class CriandoClasses_Objetos {
     public static void main(String[] args) {
 
         // Instanciando a classe caneta e gerando o objeto canetaBic
@@ -11,7 +11,6 @@ public class criandoClasses_Objetos {
         canetaBic.estaTampado = false;
 
         canetaBic.status();
-
         canetaBic.rabiscar();
         canetaBic.tampar();
         canetaBic.rabiscar();
@@ -26,7 +25,7 @@ public class criandoClasses_Objetos {
 
         canetaFaber.status();
 
-        livro livro1 = new livro();
+        Livro livro1 = new Livro();
 
         livro1.nomeLivro = "Sherlock Holmes : Um estudo em vermelho";
         livro1.tema = "Suspense";
@@ -36,7 +35,9 @@ public class criandoClasses_Objetos {
         livro1.aberto = true;
 
         livro1.fechar();
+        livro1.abrir();
         livro1.leitura();
+
     }
 
 }

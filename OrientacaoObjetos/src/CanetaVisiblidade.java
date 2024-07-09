@@ -1,10 +1,10 @@
-public class Caneta {
+public class CanetaVisiblidade {
 
-    String modelo;
-    String cor;
-    Double ponta;
-    int carga;
-    boolean estaTampado;
+    public String modelo;
+    public String cor;
+    private Double ponta;
+    protected int carga;
+    private boolean estaTampado;
 
     public void rabiscar() {
 
@@ -16,22 +16,24 @@ public class Caneta {
         }
     }
 
-     void tampar() {
+    public void tampar() {
 
+        // Mexendo em um atributo privado pois estou na mesma classe :)
         if (this.estaTampado == false) {
             this.estaTampado = true;
             System.out.println("Tampei a caneta");
         }
     }
 
-    void destampar() {
+    public void destampar() {
+        // Mexendo em um atributo privado pois estou na mesma classe :)
         if (this.estaTampado == true) {
             this.estaTampado = false;
             System.out.println("Destampando a caneta");
         }
     }
 
-    void status() {
+   public void status() {
 
         //Quem chamou o esse metódo vai ser substítuido por this
 
@@ -42,3 +44,4 @@ public class Caneta {
         System.out.println(".");
     }
 }
+
