@@ -3,9 +3,11 @@ public class CriandoCanetasVisibilidade {
 
         CanetaVisiblidade caneta = new CanetaVisiblidade();
 
-        caneta.modelo = "BIC Cristal";
+        // Como coloquei que modelo é privado não se pode fazer mais com esse metódo
+        // Pois dessa forma acesso diretamente o atributo o que não é boa prática
+        //caneta.modelo = "BIC Cristal";
+
         caneta.cor = "azul";
-        //caneta.ponta = "azul";
 
         // o atributo carga funciona pois caneta é filha
         // eu estou utilizando algo que vem da Classe CanetaVisiblidade então é livre acesso
@@ -16,5 +18,6 @@ public class CriandoCanetasVisibilidade {
         caneta.status();
         caneta.destampar();
         caneta.rabiscar();
+
     }
 }

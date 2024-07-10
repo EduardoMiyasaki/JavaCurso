@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b97b49c8-f00a-4a3f-80fc-ead55913d4ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../introducaoJava/out/production/introducaoJava/chamandoFuncao1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introducaoJava/out/production/introducaoJava/chamandoFuncao1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../introducaoJava/out/production/introducaoJava/chamandoFuncao2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../introducaoJava/out/production/introducaoJava/chamandoFuncao2.class" afterDir="false" />
-    </list>
+    <list default="true" id="b97b49c8-f00a-4a3f-80fc-ead55913d4ca" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +47,7 @@
     "Application.CriandoCanetasVisibilidade.executor": "Run",
     "Application.CriandoClasses_Objetos.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MetodosEspeciais.executor": "Run",
     "Application.classesObjetos.executor": "Run",
     "Application.criandoClasses_Objetos.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",

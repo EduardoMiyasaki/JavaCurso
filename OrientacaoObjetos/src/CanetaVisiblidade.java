@@ -1,10 +1,16 @@
 public class CanetaVisiblidade {
 
-    public String modelo;
+    private String modelo;
     public String cor;
     private Double ponta;
     protected int carga;
     private boolean estaTampado;
+
+    // Esse é o metódo construtor pois// tem o mesmo nome da classe
+    // Tem como colocar parametros no construtor também
+    public CanetaVisiblidade(){
+        this.tampar();
+    }
 
     public void rabiscar() {
 
@@ -33,7 +39,7 @@ public class CanetaVisiblidade {
         }
     }
 
-   public void status() {
+    public void status() {
 
         //Quem chamou o esse metódo vai ser substítuido por this
 
@@ -43,5 +49,34 @@ public class CanetaVisiblidade {
         System.out.println("Está tampada? " + this.estaTampado);
         System.out.println(".");
     }
+
+    public String getModelo() {
+        return this.modelo;
+    }
+
+    public void setModelo(String m) {
+        this.modelo = m;
+    }
+
+    public double getPonta() {
+        return this.ponta;
+    }
+
+    public void setPonta(double p) {
+        this.ponta = p;
+    }
+
+    public String getCor() {
+        return this.cor;
+    }
+
+    public void setCor(String c) {
+        this.cor = c;
+    }
+
+    // metódo construtor você faz pra sempre que alguém instanciar um novo objeto
+    // ele já esteja com algumas informações pré definidas como no exemplo abaixo onde
+    // quando cria-se a caneta ela já está tampada
+
 }
 
