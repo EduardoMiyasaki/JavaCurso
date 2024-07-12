@@ -29,6 +29,7 @@ public class ExercicioPratico {
         conta2.abrirConta("Conta poupanca");
         conta2.setNumeroConta(87);
         conta2.setDono("Fernando Miyasaki");
+        conta2.depositar(500);
         conta2.dadosConta();
     }
 

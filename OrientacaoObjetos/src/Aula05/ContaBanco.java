@@ -2,8 +2,7 @@ package Aula05;
 
 public class ContaBanco {
 
-
-        private String tipoConta;
+        protected String tipoConta;
         public int numeroConta;
         private String nome;
         private double saldo;
@@ -20,13 +19,15 @@ public class ContaBanco {
 
             if (t == "Conta corrente") {
 
+                // setTipo(t)
                 this.tipoConta = t;
-                this.saldo = 50;
+                setSaldo(50);
                 this.status = true;
                 System.out.println("Conta Corrente criada!!!");
 
             } else if (t == "Conta poupanca") {
 
+                // setTipo(t)
                 this.tipoConta = t;
                 this.saldo = 150;
                 this.status = true;
@@ -55,6 +56,7 @@ public class ContaBanco {
                 System.out.println("Não pode depositar,pois sua conta está fechada");
             } else {
                 this.saldo = this.saldo + valor;
+                // setSaldo(getSaldo() + valor);
                 System.out.println("Depósito efetuado");
             }
 
@@ -93,8 +95,8 @@ public class ContaBanco {
         }
 
         public void dadosConta() {
-            System.out.println("O tipo da conta é " + this.tipoConta);
-            System.out.println("O número da conta é " + this.numeroConta);
+            System.out.println("O tipo da conta é " + this.getTipoConta());
+            System.out.println("O número da conta é " + this.getNumeroConta());
             System.out.println("O nome do dono é " + this.nome);
             System.out.println("O saldo da conta é " + this.saldo);
 
@@ -107,18 +109,18 @@ public class ContaBanco {
 
         }
 
-        public void getNumeroConta() {
+        public int getNumeroConta() {
             System.out.println("O número da conta é " + this.numeroConta);
-
+            return numeroConta;
         }
 
         public void setNumeroConta(int n) {
             this.numeroConta = n;
         }
 
-        public void getTipoConta() {
+        public String getTipoConta() {
             System.out.println("O tipo da conta é " + this.tipoConta);
-
+            return tipoConta;
         }
 
         public void getDono() {
