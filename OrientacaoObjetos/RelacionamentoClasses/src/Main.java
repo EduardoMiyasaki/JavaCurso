@@ -11,18 +11,24 @@ public class Main {
         lutadores[4] = new Lutador("Ufocobol", "Brasil", 37, 1.70, 119.3, 5, 4, 3);
         lutadores[5] = new Lutador("Nerdaard", "Estados Unidos", 30, 1.81, 105.7, 12, 2, 4);
 
-        /*  Lutador lutador1 = new Lutador();
-        Lutador lutador2 = new Lutador();
+        Luta luta1 = new Luta();
 
-        lutador1.setNome("Pretty Boy");
-        lutador1.setNacionalidade("França");
-        */
+        luta1.marcarLuta(lutadores[0], lutadores[1]);
+        luta1.lutar();
+        System.out.println("-------------");
 
-        lutadores[3].ganharLuta();
-        lutadores[3].perderLuta();
-        lutadores[3].empatarLuta();
-        lutadores[3].setPeso(53.6);
-        lutadores[3].apresentar();
-        lutadores[0].status();
+        // lutadores[0].apresentar();
+        // lutadores[1].apresentar();
+        // Lutador lutador1 = new Lutador();
+        // lutador1.setNacionalidade("França");
+        
+        /*
+         * lutadores[3].ganharLuta();
+         * lutadores[3].perderLuta();
+         * lutadores[3].empatarLuta();
+         * lutadores[3].setPeso(53.6);
+         * lutadores[3].apresentar();
+         * lutadores[0].status();
+         */
     }
 }

@@ -11,12 +11,12 @@ public class Lutador implements Lutar {
 
     // Metódo construtor
 
-    public Lutador(String no, String na, int id, double al, double pe, int vi, int de, int emp) {
+    public Lutador(String nome, String nacionalidade, int idade, double altura, double pe, int vi, int de, int emp) {
 
-        this.setNome(no);
-        this.setNacionalidade(na);
-        this.setIdade(id);
-        this.setAltura(al);
+        this.setNome(nome);
+        this.setNacionalidade(nacionalidade);
+        this.setIdade(idade);
+        this.setAltura(altura);
         this.setPeso(pe);
         this.setVitorias(vi);
         this.setDerrotas(de);
