@@ -17,12 +17,12 @@ public class Main {
         luta1.lutar();
         System.out.println("-------------");
 
-        // lutadores[0].apresentar();
-        // lutadores[1].apresentar();
-        // Lutador lutador1 = new Lutador();
-        // lutador1.setNacionalidade("França");
-        
         /*
+         lutadores[0].apresentar();
+         lutadores[1].apresentar();
+         Lutador lutador1 = new Lutador();
+         lutador1.setNacionalidade("França");
+
          * lutadores[3].ganharLuta();
          * lutadores[3].perderLuta();
          * lutadores[3].empatarLuta();
