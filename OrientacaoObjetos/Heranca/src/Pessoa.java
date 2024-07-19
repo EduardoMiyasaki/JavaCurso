@@ -10,14 +10,6 @@ public class Pessoa {
 
     // Metódo construtor
 
-    /*
-    public Pessoa(String no,int idad,String sex){
-        this.nome = no;
-        this.idade = idad;
-        this.sexo = sex;
-    }
-    */
-
     // Metódos especiais
     public void setNome(String n) {
         this.nome = n;

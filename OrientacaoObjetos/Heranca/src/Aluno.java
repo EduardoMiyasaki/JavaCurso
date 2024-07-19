@@ -26,4 +26,14 @@ public class Aluno extends Pessoa{
     public void cancelarMatricula(){
         this.anoMatricula = 0;
     }
+
+    @Override
+    public void status(){
+        System.out.println("O nome da pessoa é " + this.getNome());
+        System.out.println("A idade da pessoa é " + this.getIdade());
+        System.out.println("O sexo é " + this.getSexo());
+        System.out.println("O ano de matrícula foi " + this.getMatricula());
+        System.out.println("O curso que está sendo feito é " + this.getCurso());
+
+    }
 }

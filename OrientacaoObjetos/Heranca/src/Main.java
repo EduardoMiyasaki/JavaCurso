@@ -19,6 +19,7 @@ public class Main {
         aluno1.setSexo("Masculino");
         aluno1.setCurso("Escola");
         aluno1.setMatricula(2024);
+        aluno1.status();
         aluno1.cancelarMatricula();
 
         Professor professor1 = new Professor();
