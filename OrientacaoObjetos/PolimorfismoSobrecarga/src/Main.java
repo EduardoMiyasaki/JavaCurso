@@ -31,7 +31,7 @@ public class Main {
         cachorro1.setPeso(13.5f);
         cachorro1.setMembros(4);
         cachorro1.setNomeDono("Eduardo");
-        cachorro1.reagir(12,14f);
+        cachorro1.reagir(12, 14f);
 
         cachorro1.reagir(dono2);
 
@@ -45,8 +45,6 @@ public class Main {
         cachorro2.setNomeDono("Fernando");
         cachorro2.reagir("Ola");
         cachorro2.reagir(19);
-
-
         cachorro2.reagir(dono2);
     }
 }
