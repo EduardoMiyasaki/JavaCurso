@@ -26,11 +26,12 @@ public class Gafanhoto extends Pessoa{
     }
 
     public void viuMaisUm(){
+
         this.setTotalAssistido(this.getTotalAssistido() + 1);
     }
 
     @Override
-    public void status(){
+    public  void status(){
         // super.toString()
         // Chamaria todos os status da pessoa se estivesse sendo usado toString
         

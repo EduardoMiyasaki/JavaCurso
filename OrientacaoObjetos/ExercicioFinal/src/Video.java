@@ -1,4 +1,4 @@
-public class Video implements AcoesVideo{
+public class Video implements AcoesVideo {
 
     private String titulo;
     private int avaliacao;
@@ -15,71 +15,75 @@ public class Video implements AcoesVideo{
     }
 
     // Métodos especiais
-    public void setTitulo(String t){
+    public void setTitulo(String t) {
         this.titulo = t;
     }
 
-    public String getTitulo(){
+    public String getTitulo() {
         return this.titulo;
     }
 
-    public void setAvaliacao(int a){
-        this.avaliacao = a;
+    public void setAvaliacao(int a) {
+        int nova;
+
+        if (getViews() > 0) {
+            nova = (int) (this.avaliacao + a) / this.getViews();
+            this.avaliacao = nova;
+        }
     }
 
-    public int getAvaliacao(){
+    public int getAvaliacao() {
         return this.avaliacao;
     }
 
-    public void setViews(int v){
+    public void setViews(int v) {
         this.views = v;
     }
 
-    public int getViews(){
+    public int getViews() {
         return this.views;
     }
 
-    public void setCurtidas(int c){
+    public void setCurtidas(int c) {
         this.curtidas = c;
     }
 
-    public int getCurtidas(){
+    public int getCurtidas() {
         return this.curtidas;
     }
 
-    public void setReproduzindo(boolean r){
+    public void setReproduzindo(boolean r) {
         this.reproduzindo = r;
     }
 
-    public boolean getReproduzindo(){
+    public boolean getReproduzindo() {
         return this.reproduzindo;
     }
 
     @Override
-    public void play(){
+    public void play() {
         this.setReproduzindo(true);
     }
 
     @Override
-    public void pause(){
+    public void pause() {
         this.setReproduzindo(false);
     }
 
     @Override
-    public void like(){
+    public void like() {
         this.setCurtidas(this.getCurtidas() + 1);
     }
 
-    public void status(){
+    public void status() {
         System.out.println("O título do video é: " + this.getTitulo());
         System.out.println("A quantidade de views do video é: " + this.getViews());
         System.out.println("A quantidade de likes do video é: " + this.getCurtidas());
         System.out.println("A quantidade de estrelas do video é: " + this.getAvaliacao());
 
-        if(this.getReproduzindo()){
+        if (this.getReproduzindo()) {
             System.out.println("O Video está sendo reproduzido");
-        }
-        else{
+        } else {
             System.out.println("O vídeo está pausado");
         }
 
